@@ -4,7 +4,7 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "nodemon",
-    "seed": "rm prisma/cozey.db && prisma db push && prisma db seed && prisma generate",
+    "seed": "rm -f prisma/cozey.db && prisma db push && prisma db seed && prisma generate",
     "test": "jest"
   },
   "prisma": {

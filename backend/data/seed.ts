@@ -19,7 +19,10 @@ async function main() {
       data: {
         ...lineItem,
         products: {
-          connect: lineItem.products.map((id) => ({ id })),
+          create: lineItem.products.map(({ id, quantity }) => ({
+            productId: id,
+            quantity,
+          })),
         },
       },
     });

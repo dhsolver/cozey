@@ -7,6 +7,11 @@ class OrdersController {
     res.status(200).send(orders);
   }
 
+  async listPickOrders(req: express.Request, res: express.Response) {
+    const orders = await orderService.pickList();
+    res.status(200).send(orders);
+  }
+
   async findOrderById(req: express.Request, res: express.Response) {
     const order = await orderService.findById(req.body.id);
     res.status(200).send(order);

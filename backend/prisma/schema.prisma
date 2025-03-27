@@ -21,16 +21,26 @@ model Order {
 }
 
 model Product {
-  id          Int        @id @default(autoincrement())
-  name        String
-  description String?
-  price       Float
-  lineItems   LineItem[]
+  id              Int               @id @default(autoincrement())
+  name            String
+  description     String?
+  price           Float
+  LineItemProduct LineItemProduct[]
 }
 
 model LineItem {
-  id       Int       @id @default(autoincrement())
+  id       Int               @id @default(autoincrement())
   name     String
-  products Product[]
   orders   Order[]
+  products LineItemProduct[]
+}
+
+model LineItemProduct {
+  lineItemId Int
+  productId  Int
+  quantity   Int
+  lineItem   LineItem @relation(fields: [lineItemId], references: [id])
+  product    Product  @relation(fields: [productId], references: [id])
+
+  @@id([lineItemId, productId]) // Composite primary key
 }

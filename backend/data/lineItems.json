@@ -1,18 +1,60 @@
 [
-    {
-      "id": 1,
-      "name": "Valentines Box",
-      "products": [1, 2, 3, 4]
-    },
-    {
-      "id": 2,
-      "name": "Birthday Box",
-      "products": [5, 6, 7]
-    },
-    {
-      "id": 3,
-      "name": "Client Gift Box",
-      "products": [8, 9, 10]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Valentines Box",
+    "products": [
+      {
+        "id": 1,
+        "quantity": 1
+      },
+      {
+        "id": 2,
+        "quantity": 1
+      },
+      {
+        "id": 3,
+        "quantity": 1
+      },
+      {
+        "id": 4,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Birthday Box",
+    "products": [
+      {
+        "id": 5,
+        "quantity": 1
+      },
+      {
+        "id": 6,
+        "quantity": 1
+      },
+      {
+        "id": 7,
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Client Gift Box",
+    "products": [
+      {
+        "id": 8,
+        "quantity": 1
+      },
+      {
+        "id": 9,
+        "quantity": 1
+      },
+      {
+        "id": 10,
+        "quantity": 1
+      }
+    ]
+  }
+]

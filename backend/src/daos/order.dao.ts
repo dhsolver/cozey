@@ -1,5 +1,16 @@
-import { Order, PrismaClient } from "@prisma/client";
+import { LineItem, Order, PrismaClient, Product } from "@prisma/client";
 import { getPrisma } from "../database";
+
+export type FullLineItem = LineItem & {
+  products: Array<{
+    product: Product;
+    quantity: number;
+  }>;
+};
+
+export type FullOrder = Order & {
+  lineItems: Array<FullLineItem>;
+};
 
 class OrderDao {
   prisma: PrismaClient;
@@ -26,12 +37,16 @@ class OrderDao {
     });
   }
 
-  async getOrders(): Promise<Order[]> {
+  async getOrders(): Promise<FullOrder[]> {
     const result = await this.prisma.order.findMany({
       include: {
         lineItems: {
           include: {
-            products: true,
+            products: {
+              include: {
+                product: true,
+              },
+            },
           },
         },
       },

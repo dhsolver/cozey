@@ -10,12 +10,11 @@ export class OrdersRoutes extends CommonRoutesConfig {
   configureRoutes() {
     this.app
       .route(`/orders`)
-      .get(
-        ordersController.listOrders
-      )
-      .post(
-        ordersController.createOrder
-      );
+      .get(ordersController.listOrders)
+      .post(ordersController.createOrder);
+
+    this.app.route(`/orders/pick`).get(ordersController.listPickOrders);
+    this.app.route(`/orders/pack`).get(ordersController.listOrders);
 
     this.app
       .route(`/orders/:orderId`)

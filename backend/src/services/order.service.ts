@@ -3,8 +3,8 @@ import { Order } from "@prisma/client";
 import orderDao, { FullOrder } from "../daos/order.dao";
 
 export type PickItem = {
-  productName: String;
-  quantity: Number;
+  productName: string;
+  quantity: number;
 };
 
 class OrderService {

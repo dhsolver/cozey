@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./cozey.db"
+}
+
+model Order {
+  id              Int        @id @default(autoincrement())
+  total           Float
+  date            DateTime
+  shippingAddress String
+  customerName    String
+  customerEmail   String
+  lineItems       LineItem[]
+}
+
+model Product {
+  id          Int        @id @default(autoincrement())
+  name        String
+  description String?
+  price       Float
+  lineItems   LineItem[]
+}
+
+model LineItem {
+  id       Int       @id @default(autoincrement())
+  name     String
+  products Product[]
+  orders   Order[]
+}

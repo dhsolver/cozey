@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "name": "Valentines Box",
+      "products": [1, 2, 3, 4]
+    },
+    {
+      "id": 2,
+      "name": "Birthday Box",
+      "products": [5, 6, 7]
+    },
+    {
+      "id": 3,
+      "name": "Client Gift Box",
+      "products": [8, 9, 10]
+    }
+  ]
+  

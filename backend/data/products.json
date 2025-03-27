@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "Red Roses Bouquet",
+      "price": 20.00
+    },
+    {
+      "id": 2,
+      "name": "Box of chocolates",
+      "price": 15.00
+    },
+    {
+      "id": 3,
+      "name": "Love card",
+      "price": 5.00
+    },
+    {
+      "id": 4,
+      "name": "Women’s perfume",
+      "price": 10.00
+    },
+    {
+      "id": 5,
+      "name": "Birthday cupcake",
+      "price": 10.00
+    },
+    {
+      "id": 6,
+      "name": "$100 Visa Gift Card",
+      "price": 25.00
+    },
+    {
+      "id": 7,
+      "name": "Birthday card",
+      "price": 5.00
+    },
+    {
+      "id": 8,
+      "name": "Bottle of wine",
+      "price": 30.00
+    },
+    {
+      "id": 9,
+      "name": "Fruit basket",
+      "price": 20.00
+    },
+    {
+      "id": 10,
+      "name": "Pen",
+      "price": 2.00
+    }
+  ]
+  

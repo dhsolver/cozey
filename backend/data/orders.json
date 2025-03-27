@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "total": 150.00,
+    "date": "2023-09-15T14:30:00Z",
+    "shippingAddress": "100 Dundas Street East, Toronto, ON, M5B 1N1, Canada",
+    "customerName": "John Smith",
+    "customerEmail": "john.smith@email.com",
+    "lineItems": [1, 2]
+  },
+  {
+    "id": 2,
+    "total": 130.00,
+    "date": "2023-09-15T16:45:00Z",
+    "shippingAddress": "200 Queen Street West, Toronto, ON, M5H 3R8, Canada",
+    "customerName": "Rob Smith",
+    "customerEmail": "rob.smith@email.com",
+    "lineItems": [3, 1]
+  }
+]

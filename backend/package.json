@@ -1,0 +1,28 @@
+{
+  "name": "cozey-challenge-backend",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "nodemon",
+    "seed": "rm prisma/cozey.db && prisma db push && prisma db seed && prisma generate"
+  },
+  "prisma": {
+    "seed": "ts-node -O {\"resolveJsonModule\":true} data/seed.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "body-parser": "^2.2.0",
+    "express": "^4.21.2",
+    "prisma": "^6.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.14",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

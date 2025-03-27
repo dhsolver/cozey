@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export type PickItem = {
   productName: string;
   quantity: number;
@@ -10,8 +12,12 @@ const Pick = async () => {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <h1>Here's the list of products for the picking team</h1>
-        <ol>
+        <Link href="/">Back</Link>
+
+        <h1 className="text-4xl">
+          Here's the list of products for the picking team
+        </h1>
+        <ol className="list-decimal list-inside">
           {items.map((item, index) => (
             <li key={`${index}_${item.productName}`}>
               {item.productName} x {item.quantity}

@@ -1,20 +1,38 @@
 [
   {
     "id": 1,
-    "total": 150.00,
+    "total": 150.0,
     "date": "2023-09-15T14:30:00Z",
-    "shippingAddress": "100 Dundas Street East, Toronto, ON, M5B 1N1, Canada",
+    "shippingAddress": "100 Dundas Street East",
     "customerName": "John Smith",
     "customerEmail": "john.smith@email.com",
     "lineItems": [1, 2]
   },
   {
     "id": 2,
-    "total": 130.00,
+    "total": 130.0,
     "date": "2023-09-15T16:45:00Z",
-    "shippingAddress": "200 Queen Street West, Toronto, ON, M5H 3R8, Canada",
+    "shippingAddress": "200 Queen Street West",
     "customerName": "Rob Smith",
     "customerEmail": "rob.smith@email.com",
     "lineItems": [3, 1]
+  },
+  {
+    "id": 3,
+    "total": 130.0,
+    "date": "2023-09-15T16:45:00Z",
+    "shippingAddress": "100 Queen Street West",
+    "customerName": "Dan Smith",
+    "customerEmail": "dan.smith@email.com",
+    "lineItems": [1, 2, 3]
+  },
+  {
+    "id": 4,
+    "total": 130.0,
+    "date": "2023-09-15T16:45:00Z",
+    "shippingAddress": "200 Dundas Street West",
+    "customerName": "Tom Smith",
+    "customerEmail": "tom.smith@email.com",
+    "lineItems": [2, 3]
   }
 ]

@@ -1,13 +1,13 @@
 import { LineItem, PrismaClient } from "@prisma/client";
 import { getPrisma } from "../database";
 
-class LineItemDao {
+export class LineItemDao {
   prisma: PrismaClient;
 
   constructor() {
     this.prisma = getPrisma();
   }
-  
+
   async addLineItem(lineItem): Promise<LineItem> {
     const result = await this.prisma.lineItem.create({
       data: {

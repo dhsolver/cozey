@@ -1,7 +1,7 @@
 import { PrismaClient, Product } from "@prisma/client";
 import { getPrisma } from "../database";
 
-class ProductDao {
+export class ProductDao {
   prisma: PrismaClient;
 
   constructor() {

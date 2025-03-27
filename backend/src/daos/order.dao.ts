@@ -12,7 +12,7 @@ export type FullOrder = Order & {
   lineItems: Array<FullLineItem>;
 };
 
-class OrderDao {
+export class OrderDao {
   prisma: PrismaClient;
 
   constructor() {

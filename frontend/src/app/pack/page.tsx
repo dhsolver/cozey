@@ -10,7 +10,7 @@ const Pack = async () => {
         <Link href="/">Back</Link>
 
         <h1 className="text-4xl">
-          Here's the list of orders for the packing team
+          Here is the list of orders for the packing team
         </h1>
         <ul className="list-disc list-inside">
           {orders.map((order, orderIndex) => (

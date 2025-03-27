@@ -15,7 +15,7 @@ const Pick = async () => {
         <Link href="/">Back</Link>
 
         <h1 className="text-4xl">
-          Here's the list of products for the picking team
+          Here is the list of products for the picking team
         </h1>
         <ol className="list-decimal list-inside">
           {items.map((item, index) => (
